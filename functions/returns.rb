@@ -1,5 +1,8 @@
 def helloReturn()
-    return "Hello world."
+    return {
+        "name" => "Femi Fatokun",
+        "age" => 21
+    }
 end
 
 string = helloReturn();
