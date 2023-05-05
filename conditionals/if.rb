@@ -1,5 +1,5 @@
-hungry = true
-awake = true
+hungry = false
+awake = false
 timeForWork = false
 
 if awake
@@ -19,4 +19,14 @@ end
 
 if hungry || awake
     puts "Hello world."
+end
+
+if hungry && awake
+    puts "You are awake and hungry"
+elsif hungry && !awake
+    puts "You are hungry but not awake"
+elsif !hungry && awake
+    puts "You are awake but not hungry"
+else
+    puts "You are not awake and not hungry."
 end
